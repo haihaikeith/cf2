@@ -1,0 +1,200 @@
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+  src: url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+  background-color: #f5f5f5;
+  color: black;
+
+  line-height: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  font-variant:normal;
+  text-decoration: underline;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+a {
+  color: #B0E0E6;
+}
+
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: overline;
+  color: black;
+
+
+}
+
+a:active {
+  /* selected link */
+  color: darkblue;
+
+}
+
+a:visited {
+  color: purple;
+  text-decoration: overline;
+  font-style: italic;
+
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+button:hover, button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  background-color: #545454;
+}
+
+
+.button__secondary{
+  background-color: #846765;
+
+}
+
+ .button__secondary:hover {
+   cursor: not-allowed;
+ }
+
+.textbox {
+  border: 1px solid white;
+  width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.h1 {
+  text-align: center;
+}
+
+.skills-table {
+  margin: 20px;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  float: left;
+  margin: 15px;
+  width: 320px;
+  height: auto;
+  border-radius: 33%;
+  border: 1px solid black;
+
+}
+
+
+.skills-table {
+  margin:15px;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+
+}
+
+.my-profile {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.contact-page {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+
+}
+
+.address {
+  display: flex;
+  text-align: center;
+}
+
+.contact-form {
+  display: block;
+  margin: 20px
+}
+
+.contact-list li{
+  display: inline-block;
+  margin-left: 10px;
+}
+
